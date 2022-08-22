@@ -5,13 +5,13 @@ from wechatpy.client.api import WeChatMessage, WeChatTemplate
 import requests
 import os
 import random
-import datetime
+# import datetime
 
 today = datetime.now()
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
 birthday = os.environ['BIRTHDAY']
-day = datetime.date.today()
+# day = datetime.date.today()
 
 app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
@@ -57,7 +57,7 @@ data = {
   "birthday_left":{"value":get_birthday(),"color":get_random_color()},
   "words":{"value":get_words(),"color":get_random_color()},
   "highest": {"value":highest,"color":get_random_color()},
-  "lowest":{"value":lowest, "color":get_random_color()}},
+  "lowest":{"value":lowest, "color":get_random_color()}}
 #   "date":{"value":day, "color":get_random_color()}}
 count = 0
 for user_id in user_ids:
