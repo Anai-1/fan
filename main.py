@@ -58,7 +58,7 @@ data = {
   "words":{"value":get_words(),"color":get_random_color()},
   "highest": {"value":highest,"color":get_random_color()},
   "lowest":{"value":lowest, "color":get_random_color()}},
-  "date":{"value":day, "color":get_random_color()}}
+#   "date":{"value":day, "color":get_random_color()}}
 count = 0
 for user_id in user_ids:
   res = wm.send_template(user_id, template_id, data)
